@@ -1,0 +1,22 @@
+.header{
+    background: #1C2B35;
+    height: 80px;
+}
+.nav-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.nav-wrap a{
+    color: #fff;
+    padding-left: 30px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+}
+.nav-wrap a:hover{
+    color: #F90;
+}
