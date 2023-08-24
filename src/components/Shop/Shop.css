@@ -1,0 +1,16 @@
+.shop-container{
+    width: 1280px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+}
+.shop-wrap {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 45px;
+    padding: 50px 50px 0px 0px;
+    grid-auto-rows: 530px;
+}
+.order-summary{
+    background-color: bisque;
+}

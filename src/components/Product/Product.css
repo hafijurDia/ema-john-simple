@@ -1,0 +1,31 @@
+.product{
+    border-radius: 8px;
+    border: 1px solid #95A0A7;
+   
+}
+.product img{
+    width: 286px;
+    height: 286px;
+    border-radius: 8px;
+    padding: 10px;
+}
+.details{
+    padding: 10px;
+}
+.details p{
+    margin: 0px;
+}
+h6.product-name {
+    font-size: 21px;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin: 0px;
+}
+p.product-price {
+    font-size: 20px;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 25px;
+    font-weight: 500;
+}
+    
