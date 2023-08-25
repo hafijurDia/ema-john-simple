@@ -15,6 +15,9 @@
 body {
   margin: 0;
 }
+button{
+  padding: 0.6em 1.2em;
+}
 button:hover{
   cursor: pointer;
 }

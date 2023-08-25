@@ -10,9 +10,9 @@ const Product = (Props) => {
                 <h6 className='product-name'>{name}</h6>
                 <p className='product-price'>Price: ${price}</p>
                 <p>Manufacturer: {seller}</p>
-                <p>Rating: {ratings} star</p>
+                <p>Rating: {ratings} stars</p>
             </div>
-            <button className='add-to-cart'>Add to Cart</button>
+            <button className='btn-cart'>Add to Cart</button>
             
         </div>
     );
