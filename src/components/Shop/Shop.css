@@ -1,9 +1,10 @@
-.shop-container{
+.shop-container {
     width: 1280px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 5fr 2fr;
 }
+
 .shop-wrap {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -11,6 +12,17 @@
     padding: 50px 50px 0px 0px;
     grid-auto-rows: 530px;
 }
-.order-summary{
-    background-color: bisque;
+
+
+.cart-title {
+    color: #1C2B35;
+    /* H5 */
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+}
+.cart-details{
+    margin: 0px 15px;
 }
