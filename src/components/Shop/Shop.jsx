@@ -18,31 +18,40 @@ const Shop = () => {
 
     useEffect(() => { 
         const storedCart = getShoppingCart();
-    
+        const saveCart = [];
         // Loop through each item in the stored cart
         for (const id in storedCart) {
             // Find the product by id in the products array
             const addedProduct = products.find(product => product.id === id);
-    
             // Check if the product exists
             if (addedProduct) {
                 // Get quantity of product from stored cart
                 const quantity = storedCart[id];
-    
                 // Set quantity property on the product
                 addedProduct.quantity = quantity;
-    
+                saveCart.push(addedProduct);
                 // Log the modified product
                 console.log(addedProduct);
-            } else {
-                // Log a warning if product is not found
-                console.warn(`Product with id ${id} not found in the products array.`);
-            }
+            } 
         }
+        setCart(saveCart);
     }, [products]);
 
     const addToCart = (product) => {
-       const newCart = [...cart, product];
+        let newCart = [];
+        //const newCart = [...cart, product];
+        //if product doesn't exist in the cart, then set quantity = 1;
+        //if product exist in the cart, then set quantity by 1;
+        const exist = cart.find(pd => pd.id === product.id);
+        if (!exist) {
+            product.quantity = 1;
+            newCart = [...cart, product];
+        }
+        else{
+            exist.quantity = exist.quantity + 1;
+            const remaining = cart.filter(pd => pd.id !== product.id);
+            newCart = [...remaining, exist];
+        }
        setCart(newCart);
        addToDb(product.id);
     }
