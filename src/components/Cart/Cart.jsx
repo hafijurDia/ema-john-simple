@@ -7,6 +7,9 @@ const Cart = ({cart}) => {
     // const {cart} = Props --option 2
     let total = 0;
     let totalShipping = 0;
+
+    console.log(cart);
+
     for (const product of cart) {
         total = total + product.price;
         totalShipping = totalShipping + product.shipping;
