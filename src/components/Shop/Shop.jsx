@@ -55,7 +55,9 @@ const Shop = () => {
        setCart(newCart);
        addToDb(product.id);
     }
-
+    const obj = {name :'jack',age:27}
+    const a= 'name' in obj;
+    console.log(a)
     return (
         <div className='shop-container'>
             <div className="shop-wrap">
