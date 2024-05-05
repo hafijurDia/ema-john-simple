@@ -9,7 +9,7 @@ const Header = () => {
       <div className="nav-wrap">
         <a href="/"><img src={logo} alt="" /></a>
         <div className="menu">
-            <Link to="/">Shop</Link>
+            <Link to="/shop">Shop</Link>
             <Link to="/orders">Orders</Link>
             <Link to="/inventory">Inventory</Link>
             <Link to="/login">Login</Link>

@@ -3,4 +3,16 @@
     padding: 25px 0px;
     position: sticky;
     top:0;
+    height: 100vh;
+}
+.btn-clear-cart{
+    width: 92%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    background-color: brown;
+    border: 0px;
+    border-radius: 8px;
+    font-size: 16px;
 }

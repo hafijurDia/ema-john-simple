@@ -1,0 +1,33 @@
+.home-container{
+    width: 1280px;
+    margin: 0 auto;
+}
+.content-wrap{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 0px;
+}
+.discount{
+    color: #FF9900;
+    font-size: 14px;
+    margin-bottom: 50px;
+}
+.hero-title{
+    font-size: 40px;
+    margin: 0px;
+    padding: 0px;
+    line-height: normal;
+}
+.short-info{
+    padding: 0px;
+    margin:0px;
+    margin-bottom: 40px;
+}
+.btn-shop button{
+    background-color: #FF9900;
+    border: 0px;
+    border-radius: 6px;
+    font-size: 20px;
+}

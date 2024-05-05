@@ -1,8 +1,11 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
 import './Cart.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faTrashCan,faCreditCard,faArrowRight} from '@fortawesome/free-solid-svg-icons';
 
 
-const Cart = ({cart}) => {
+const Cart = ({cart, handleClearCart, children}) => {
     // const cart = Props.cart -- option 1
     // const {cart} = Props --option 2
     let total = 0;
@@ -35,6 +38,12 @@ const Cart = ({cart}) => {
                     <p>Tax: ${tax.toFixed(2)}</p>
                     <h4>Total: ${grandTotal.toFixed(2)}</h4>
                 </div>
+                <button className='btn-clear-cart' onClick={()=>handleClearCart()}>
+                    <span>Clear Cart </span>
+                    <FontAwesomeIcon icon={faTrashCan} />
+                </button>
+
+                {children}
         </div>
     );
 };
