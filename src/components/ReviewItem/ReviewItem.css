@@ -39,6 +39,9 @@ button.delete-icon {
     width: 50px;
     background: rgba(242, 148, 148, 0.467);
     border: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 button.delete-icon svg{
     font-size: 24px;
