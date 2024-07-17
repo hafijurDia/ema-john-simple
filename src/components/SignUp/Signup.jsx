@@ -13,6 +13,7 @@ function Signup() {
             const password = form.password.value;
             const confirmPassword = form.confirmPassword.value;
             console.log(email, password);
+            console.log('somethig new update')
 
             if (password !== confirmPassword) {
                   setError('Password not Matched!')
