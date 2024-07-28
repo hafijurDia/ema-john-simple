@@ -21,3 +21,8 @@
 .nav-wrap a:hover{
     color: #F90;
 }
+.login-logout{
+    border: 0px;
+    border-radius: 5px;
+    margin-left: 10px;
+}

@@ -1,9 +1,11 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import './SignUp.css'
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../providers/AuthProvider';
 
 function Signup() {
       const [error, setError] = useState('');
+      const {createUser} = useContext(AuthContext);
 
       const handleSignup = event =>{
             event.preventDefault();
@@ -21,6 +23,19 @@ function Signup() {
             if (password.length < 6) {
                   setError('Password must be 6 characters')
             }
+            createUser(email, password)
+            .then((result) => {
+                  // Signed up 
+                  const loggedUser = result.user;
+                  console.log(loggedUser);
+                  // ...
+                })
+                .catch((error) => {
+                  const errorCode = error.code;
+                  const errorMessage = error.message;
+                  setError(errorMessage);
+                  // ..
+                });
       }
 
   return (
@@ -53,7 +68,7 @@ function Signup() {
                          placeholder="confirm your Password" />
 
                   <div className="wrap">
-                        <button type="submit">
+                        <button className='full' type="submit">
                               Sign Up
                         </button>
                   </div>
@@ -62,7 +77,7 @@ function Signup() {
                  <Link to='/login'>Login</Link>
             </p>
             <div className="wrap">
-                        <button type="submit">
+                        <button className='full' type="submit">
                               Login with Google
                         </button>
                   </div>
