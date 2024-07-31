@@ -16,3 +16,11 @@
  * 5. set the provider
  * 
  */
+
+/**
+ * =========Firebase HOSTING========
+ * One time per pc
+ * 1.npm install -g firebase-tools
+ * 2.
+ * 3.
+ */
